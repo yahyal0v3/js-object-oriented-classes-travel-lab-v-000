@@ -24,6 +24,6 @@ class Route {
   }
 
   estimatedTime() {
-    
+    return blocksTravelled() * 3
   }
 }
