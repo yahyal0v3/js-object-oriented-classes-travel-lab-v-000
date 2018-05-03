@@ -17,6 +17,15 @@ class Route {
   }
 
   blocksTravelled() {
-    
+    horizontalDistance = this.beginningLocation.horizontal - this.endingLocation.horizontal
+    verticalDistance = this.beginningLocation.vertical - this.endingLocation.vertical
   }
 }
+
+
+
+
+
+
+
+
