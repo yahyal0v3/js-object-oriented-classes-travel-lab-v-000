@@ -17,7 +17,8 @@ class Route {
   }
 
   blocksTravelled() {
-    const horizontalDistance = this.beginningLocation.horizontal - this.endingLocation.horizontal
+    const eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
+    const horizontalDistance = eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal)
     const verticalDistance = this.beginningLocation.vertical - this.endingLocation.vertical
     return horizontalDistance + verticalDistance
   }
